@@ -7,6 +7,35 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>SVG how to use</h1>
   
+  <style>
+    .icon {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+    }
+
+    .icon-music {
+      background-image: url(img/audio_file.svg);
+    }
+
+    .icon-clock {
+      background-image: url(img/alarm_clock.svg);
+    }
+  </style>
+
+  <i class="icon icon-music"></i>
+
+  <i class="icon icon-clock"></i>
+
+  <section>
+    <ul>
+      <li class="good">Can be cached</li>
+      <li class="bad">Without DOM integration</li>
+      <li class="bad">Without CSS integration</li>
+      <li class="medium">Animation will work only if there is inside svg</li>
+    </ul>
+  </section>
 </body>
 </html>
