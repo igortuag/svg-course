@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Preserve Aspect Ratio</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <svg
+      width="300"
+      height="100"
+      viewBox="0 0 300 100"
+      style="border: 1px solid red"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <circle r="25" cx="50" />
+    </svg>
+    <p>xMidYmid meet: similar to object fit: contain</p>
+    <p>xMidYmid slice: similar to object fit: cover</p>
+  </body>
+</html>
