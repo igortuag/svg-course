@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Containers</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Containers</h1>
+
+    <section>
+      <h2>Defs</h2>
+      <svg width="200" height="200">
+        <defs>
+          <rect id="myRect" x="10" y="10" width="100" height="100" fill="red" />
+        </defs>
+        <use xlink:href="#myRect" />
+      </svg>
+    </section>
+
+    <section>
+      <h2>Group</h2>
+      <svg width="200" height="200">
+        <g transform="translate(10, 10)">
+          <rect x="0" y="0" width="100" height="100" fill="red" />
+          <rect x="50" y="50" width="100" height="100" fill="red" />
+        </g>
+      </svg>
+    </section>
+
+    <section>
+      <h2>Clip Path</h2>
+      <svg width="200" height="200">
+        <defs>
+          <clipPath id="myClip">
+            <rect x="10" y="10" width="100" height="100" />
+          </clipPath>
+        </defs>
+        <rect x="0" y="0" width="200" height="200" fill="red" />
+        <rect
+          x="50"
+          y="50"
+          width="100"
+          height="100"
+          fill="blue"
+          clip-path="url(#myClip)"
+        />
+      </svg>
+    </section>
+
+    <section>
+      <h2>Symbol</h2>
+      <svg width="200" height="200">
+        <defs>
+          <symbol id="mySymbol" viewBox="0 0 100 100">
+            <rect x="0" y="0" width="100" height="100" fill="red" />
+          </symbol>
+        </defs>
+        <use xlink:href="#mySymbol" />
+      </svg>
+    </section>
+  </body>
+</html>
