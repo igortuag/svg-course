@@ -7,6 +7,44 @@
   <body>
     <h1>Responsive Logo</h1>
 
+    <style>
+      body {
+        background-color: #240701;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: auto;
+      }
+
+      #detalhe-externo,
+      #circulo-verde,
+      #textos {
+        transition: opacity 0.3s ease-in-out;
+      }
+
+			#inner-artwork {
+				transition: fill 0.3s ease-in-out;
+			}
+
+      @media (max-width: 768px) {
+        #detalhe-externo {
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #circulo-verde,
+        #textos {
+          opacity: 0;
+        }
+
+        #inner-artwork {
+          fill: #067655;
+        }
+      }
+    </style>
+
     <div class="container">
       <svg viewBox="0 0 612 792" preserveAspectRatio="xMidYMid meet">
         <g id="detalhe-externo">
@@ -100,7 +138,7 @@
 		c0,96.1-78,174.1-174.1,174.1C209.3,568.9,131.3,490.9,131.3,394.8"
           />
           <path
-            id="inner_artwork"
+            id="inner-artwork"
             fill="#010101"
             d="M304.5,289.8c5.8,3.4,11.9,7.6,16.5,12.2l-1.8,1.8c-9.2-0.9-19,0.3-27.5,0.3
 		c-0.9-0.9-3.1-2.4-1.2-3.7L304.5,289.8z M467,403.7c0,4.3,0.6,7.6-1.2,11.9c-16.8,4.9-27.8-12.9-44.1-10.4l1.8,9.2
