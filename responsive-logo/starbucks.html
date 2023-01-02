@@ -17,21 +17,27 @@
         margin: auto;
       }
 
+      #detalhe-externo,
+      #circulo-verde,
+      #textos {
+        transition: opacity 0.3s ease-in-out;
+      }
+
       @media (max-width: 768px) {
         #detalhe-externo {
-          display: none;
+          opacity: 0;
         }
       }
 
       @media (max-width: 480px) {
         #circulo-verde,
         #textos {
-          display: none;
+          opacity: 0;
         }
 
-				#inner-artwork {
-					fill: #067655;
-				}
+        #inner-artwork {
+          fill: #067655;
+        }
       }
     </style>
 
