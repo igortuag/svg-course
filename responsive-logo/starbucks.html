@@ -7,22 +7,29 @@
   <body>
     <h1>Responsive Logo</h1>
 
-		<style>
-			body {
-				background-color: #240701;
-			}
+    <style>
+      body {
+        background-color: #240701;
+      }
 
-			.container {
-				max-width: 700px;
-				margin: auto;
-			}
+      .container {
+        max-width: 700px;
+        margin: auto;
+      }
 
-			@media (max-width: 768px) {
-				#detalhe-externo {
-					display: none;
-				}
-			}
-		</style>
+      @media (max-width: 768px) {
+        #detalhe-externo {
+          display: none;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #circulo-verde,
+        #textos {
+          display: none;
+        }
+      }
+    </style>
 
     <div class="container">
       <svg viewBox="0 0 612 792" preserveAspectRatio="xMidYMid meet">
