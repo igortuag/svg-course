@@ -16,5 +16,5 @@ gulp.task("sprites", function () {
         },
       })
     )
-    .pipe(gulp.dest("dist/icons"));
+    .pipe(gulp.dest("."));
 });
