@@ -24,6 +24,20 @@
           .dark {
             fill: #787878;
           }
+
+          #arm {
+            transform-origin: bottom right;
+            animation: swing-arm 1s infinite;
+          }
+
+          @keyframes swing-arm {
+            0% {
+              transform: rotate(10deg);
+            }
+            100% {
+              transform: rotate(-10deg);
+            }
+          }
         </style>
         <g id="octocat">
           <path
