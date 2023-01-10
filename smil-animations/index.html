@@ -18,6 +18,17 @@
           dur="5s"
           fill="freeze"
           begin="click"
+          id="animation-circle"
+        />
+
+        <animate
+          xlink:href="#rect"
+          attributeName="x"
+          from="25"
+          to="425"
+          dur="5s"
+          fill="freeze"
+          begin="animation-circle + 1s"
         />
       </svg>
     </div>
