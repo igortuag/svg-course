@@ -13,14 +13,17 @@
       const drawer = document.querySelector(".drawer");
 
       function createCircle() {
+        const randomX = Math.floor(Math.random() * 500);
+        const randomY = Math.floor(Math.random() * 500);
+
         const circle = document.createElementNS(
           "http://www.w3.org/2000/svg",
           "circle"
         );
 
         circle.setAttribute("r", 20);
-        circle.setAttribute("cx", 100);
-        circle.setAttribute("cy", 100);
+        circle.setAttribute("cx", randomX);
+        circle.setAttribute("cy", randomY);
         circle.setAttribute("fill", "tomato");
 
         drawer.appendChild(circle);
