@@ -10,17 +10,21 @@
     <script>
       const drawer = document.querySelector(".drawer");
 
-      const circle = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "circle"
-      );
+      function createCircle() {
+        const circle = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "circle"
+        );
 
-      circle.setAttribute("r", 20);
-      circle.setAttribute("cx", 100);
-      circle.setAttribute("cy", 100);
-      circle.setAttribute("fill", "tomato");
+        circle.setAttribute("r", 20);
+        circle.setAttribute("cx", 100);
+        circle.setAttribute("cy", 100);
+        circle.setAttribute("fill", "tomato");
 
-      drawer.appendChild(circle);
+        drawer.appendChild(circle);
+      }
+
+      createCircle()
     </script>
   </body>
 </html>
