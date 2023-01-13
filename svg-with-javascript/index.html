@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG with Javascript</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <svg class="drawer" width="500" height="500" viewBox="0 0 500 500"></svg>
+
+    <button id="create">create circle</button>
+
+    <script>
+      const drawer = document.querySelector(".drawer");
+
+      function createCircle() {
+        const randomX = Math.floor(Math.random() * 500);
+        const randomY = Math.floor(Math.random() * 500);
+
+        const circle = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "circle"
+        );
+
+        circle.setAttribute("r", 20);
+        circle.setAttribute("cx", randomX);
+        circle.setAttribute("cy", randomY);
+        circle.setAttribute("fill", "tomato");
+
+        drawer.appendChild(circle);
+      }
+
+      const createButton = document.querySelector("#create");
+      createButton.addEventListener("click", createCircle);
+    </script>
+  </body>
+</html>
