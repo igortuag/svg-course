@@ -7,6 +7,8 @@
   <body>
     <svg class="drawer" width="500" height="500" viewBox="0 0 500 500"></svg>
 
+    <button id="create">create circle</button>
+
     <script>
       const drawer = document.querySelector(".drawer");
 
@@ -24,7 +26,8 @@
         drawer.appendChild(circle);
       }
 
-      createCircle()
+      const createButton = document.querySelector("#create");
+      createButton.addEventListener("click", createCircle);
     </script>
   </body>
 </html>
