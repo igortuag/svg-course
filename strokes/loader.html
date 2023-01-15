@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader with stroke</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron" />
+  </head>
+
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loading {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 7px;
+    }
+  </style>
+
+  <body>
+    <svg width="200" height="200" viewBox="0 0 40 60">
+      <polygon fill="none" stroke="#fff" stroke-width="1" points="16,1 32,32 1,32" />
+      <text fill="#fff" x="0" y="45">Loading...</text>
+    </svg>
+  </body>
+</html>
