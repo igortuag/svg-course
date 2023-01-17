@@ -15,6 +15,18 @@
         justify-content: center;
         height: 100vh;
       }
+
+      #js path {
+        stroke-dasharray: 272;
+        stroke-dashoffset: 272;
+        animation: draw 4s linear forwards;
+      }
+
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
     </style>
 
     <svg id="js" width="200" height="200" viewBox="0 0 40 60">
