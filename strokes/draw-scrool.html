@@ -55,6 +55,9 @@
 
         // Get the length of the path
         const pathLength = path.getTotalLength();
+
+        // Set the dash array and offset to the length of the path
+        path.style.strokeDasharray = pathLength;
       </script>
     </div>
   </body>
