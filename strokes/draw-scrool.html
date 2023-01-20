@@ -62,15 +62,18 @@
         // Set the offset to the length of the path
         path.style.strokeDashoffset = pathLength;
 
-        // Animate the stroke dash offset based on the scroll position
-        window.addEventListener("scroll", () => {
+        const changeStrokeDashOffset = () => {
+          // Animate the stroke dash offset based on the scroll position
           const scrollPosition = window.pageYOffset;
           const scrollPercentage =
             scrollPosition / (document.body.clientHeight - window.innerHeight);
           const drawLength = pathLength * scrollPercentage;
 
           path.style.strokeDashoffset = pathLength - drawLength;
-        });
+        };
+
+        // Animate the stroke dash offset based on the scroll position
+        window.addEventListener("scroll", () => changeStrokeDashOffset);
       </script>
     </div>
   </body>
