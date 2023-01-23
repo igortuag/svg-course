@@ -10,6 +10,34 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <style></style>
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+        font-family: "Chango", cursive;
+      }
+
+      .drunk {
+        font-size: 8vw;
+        letter-spacing: 10px;
+        border: 3vw solid #fff;
+        padding: 4vw 5vw;
+      }
+    </style>
+
+    <svg style="display: none">
+      <defs>
+        <filter id="drunk">
+          <feTurbulence baseFrequency="0.01" numOctaves="2" seed="2" />
+        </filter>
+      </defs>
+    </svg>
+
+    <div class="container">
+      <h1 class="drunk">
+        Man, <br />
+        I'm drunk
+      </h1>
+    </div>
   </body>
 </html>
