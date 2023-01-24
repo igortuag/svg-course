@@ -22,6 +22,21 @@
         letter-spacing: 10px;
         border: 3vw solid #fff;
         padding: 4vw 5vw;
+        animation: drunk 3s ease-in-out infinite alternate;
+      }
+
+      .container {
+        -webkit-filter: url("#drunk");
+        filter: url("#drunk");
+      }
+
+      @keyframes drunk {
+        0% {
+          transform: rotate(-25deg);
+        }
+        100% {
+          transform: rotate(25deg);
+        }
       }
     </style>
 
@@ -29,6 +44,7 @@
       <defs>
         <filter id="drunk">
           <feTurbulence baseFrequency="0.01" numOctaves="2" seed="2" />
+          <feDisplacementMap in="SourceGraphic" scale="30" />
         </filter>
       </defs>
     </svg>
