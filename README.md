@@ -9,3 +9,4 @@ Examples and tests following o Willian Justen.
 - Use stroke width
 - Transform text to outlines to avoid font dependence
 - Reduce blank spaces
+- Add ids and layers name to semantic
