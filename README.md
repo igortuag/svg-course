@@ -8,3 +8,4 @@ Examples and tests following o Willian Justen.
 - Use simples forms like circle and rec instead of path
 - Use stroke width
 - Transform text to outlines to avoid font dependence
+- Reduce blank spaces
