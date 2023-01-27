@@ -10,3 +10,6 @@ Examples and tests following o Willian Justen.
 - Transform text to outlines to avoid font dependence
 - Reduce blank spaces
 - Add ids and layers name to semantic
+
+## Svg Tools
+- [SVGO](https://github.com/svg/svgo) SVG Optimizer is a Node.js-based tool for optimizing SVG vector graphics files.
