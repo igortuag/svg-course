@@ -13,3 +13,4 @@ Examples and tests following o Willian Justen.
 
 ## Svg Tools
 - [SVGO](https://github.com/svg/svgo) SVG Optimizer is a Node.js-based tool for optimizing SVG vector graphics files.
+- [SVGOMG](https://jakearchibald.github.io/svgomg/) Online Optimizer and editor
