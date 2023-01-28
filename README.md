@@ -18,3 +18,4 @@ Examples and tests following o Willian Justen.
 
 ## Reference
 - [Awesome Svg](https://github.com/willianjusten/awesome-svg) - A curated list of SVG. The main idea is that everyone can contribute here, so we can center all the informations about SVG and keep up-to-date.
+- [Willian Justen Blog](https://willianjusten.com.br/) - Blog with a lot of content about svg and frontend
